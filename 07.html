@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btnEvent() {
+                var red = document.getElementById("red");
+                var white = document.getElementById("white");
+
+                red.onclick = hotpink();
+                white.onclick = white();
+            }
+        function hotpink() {
+            document.body.style.backgroundColor = 'hotpink'
+        }
+        function white() {
+            document.body.style.backgroundColor = 'white'
+        }
+    </script>
+</head>
+<body onload="btnEvent">
+    <h1>인라인 이벤트 모델(Inline Event Model)</h1>
+    <button onclick="hotpink()('응애 애기 핫핑크~')">hotpink~</button>
+    <button onclick="white()('응애 애기 하양~')">White~</button>
+</body>
+</html>
